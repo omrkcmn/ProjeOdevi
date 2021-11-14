@@ -23,10 +23,6 @@ public class CartPage extends BasePage {
         super(driver);
     }
 
-    public boolean checkIfProductAdded(){
-        return getProducts().size() > 0;
-    }
-
     private List<WebElement> getProducts(){
         return findAll(productnameLocator);
     }
@@ -34,7 +30,6 @@ public class CartPage extends BasePage {
     public void deleteItem(){
         click(deleteButton1);
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
         click(deleteButton2);
     }
 

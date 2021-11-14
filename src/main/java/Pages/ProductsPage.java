@@ -9,15 +9,10 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class ProductsPage extends BasePage {
-    By searchResulLocator = new By.ByCssSelector("ul.breadcrumb");
     By productNameLocator = new By.ByCssSelector("a.a_model_item");
-    private By _moreButton = new By.ByCssSelector("a.lazy-load-button");
+    By moreButton = new By.ByCssSelector("a.lazy-load-button");
     public ProductsPage(WebDriver driver) {
         super(driver);
-    }
-
-    public boolean isOnProductPage() {
-        return isDisplayed(searchResulLocator);
     }
 
 
@@ -36,7 +31,7 @@ public class ProductsPage extends BasePage {
     }
 
     public void clickMore(){
-        click(_moreButton);
+        click(moreButton);
     }
 
 }

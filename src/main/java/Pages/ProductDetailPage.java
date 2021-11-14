@@ -17,9 +17,6 @@ public class ProductDetailPage extends BasePage {
     public ProductDetailPage(WebDriver driver) {
         super(driver);
     }
-    public boolean isOnProductDetailPage(){
-        return isDisplayed(_addToCart);
-    }
 
     public void selectSize(){
         Random rnd = new Random();
