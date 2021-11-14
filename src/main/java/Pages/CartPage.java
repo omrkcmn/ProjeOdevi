@@ -14,7 +14,7 @@ public class CartPage extends BasePage {
     By deleteButton1 = new By.ByCssSelector("i.fa.fa-trash-o");
     By incraseQuantity = new By.ByCssSelector("a.oq-up");
     By deleteButton2 =  new By.ByCssSelector("a.sc-delete");
-    By getItemQuantity = new By.ByCssSelector("input.item-quantitiy-input");
+    By getItemQuantity = By.xpath("//*[@id='ShoppingCartContent']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div/div[1]/div/input");
     By getCartInfo = new By.ByCssSelector("a.homepage-link");
 
     public String itemQuantity = null;
@@ -33,6 +33,8 @@ public class CartPage extends BasePage {
 
     public void deleteItem(){
         click(deleteButton1);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+
         click(deleteButton2);
     }
 
@@ -41,7 +43,7 @@ public class CartPage extends BasePage {
     }
 
     public String isCartNull(){
-        return find(getCartInfo).getText();
+        return find(getCartInfo).toString();
     }
 
     public void increaseQuantity(int quantity) {
