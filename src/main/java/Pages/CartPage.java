@@ -38,7 +38,7 @@ public class CartPage extends BasePage {
     }
 
     public String isCartNull(){
-        return find(getCartInfo).toString();
+        return find(getCartInfo).getText().toString();
     }
 
     public void increaseQuantity(int quantity) {
