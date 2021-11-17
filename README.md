@@ -19,3 +19,10 @@ Page Object Pattern
 - Ürün sayfasındaki fiyat ile sepette yer alan ürün fiyatının doğruluğu karşılaştırılır.
 - Adet arttırılarak ürün adedinin 2 olduğu doğrulanır.
 - Ürün sepetten silinerek sepetin boş olduğu kontrol edilir.
+
+
+<details>
+  <summary>Spoiler Uyarısı!</summary>
+  Yeniden Dene!
+  Her mülakat gibi olumsuz dönüş... Tarih: 11/17/2021 11:25:28
+</details>
