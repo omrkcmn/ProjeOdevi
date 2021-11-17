@@ -1,4 +1,4 @@
-# ProjeOdevi
+# Selenium Web Otomasyon Mülakat Proje Ödevi
 
 Özel bir şirket için başvurduğum "Yetiştirilmek Üzere Test Mühendisi" pozisyonu için 
 48 saat içerisinde hazırlamam gereken, 24 saat içerisinde öğrenip uyguladığım Java + Selenium Test Otomasyon mülakat projesi.
